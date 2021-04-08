@@ -21,17 +21,24 @@ inputEl.addEventListener('blur',onInputBlur);
 
 // function onInputBlur (event) {
 //   inputEl.value.length === dataLength ? inputEl.classList.remove('invalid') && inputEl.classList.add('valid'):inputEl.classList.remove('valid') &&inputEl.classList.add('invalid');
-
+// const abs = (number) => (number >= 0 ? number : -number);
 // }
 
 function onInputBlur(event){
-if (inputEl.value.length === dataLength) {
-          inputEl.classList.remove('invalid')
-          inputEl.classList.add('valid');
+    if (inputEl.value.length === dataLength) {
+        chek('invalid','valid');
+
+        //   inputEl.classList.remove('invalid')
+        //   inputEl.classList.add('valid');
      }
- else{
-     inputEl.classList.remove('valid');
-     inputEl.classList.add('invalid');
+    else {
+         chek('valid','invalid');
+    //  inputEl.classList.remove('valid');
+    //  inputEl.classList.add('invalid');
  }
 };
 
+function chek(a,b) {
+     inputEl.classList.remove(a)
+          inputEl.classList.add(b);
+}
