@@ -1,0 +1,19 @@
+.gallery_img {
+  background: white;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 30px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+#validation-input {
+  border: 3px solid #663bdb;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
